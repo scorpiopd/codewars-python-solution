@@ -11,3 +11,39 @@ def alphabet_position(text):
         if char in s:
             s1+=str(pos[char])+" "
     return s1.strip()
+
+
+
+
+
+
+""""""""
+def alphabet_position(text):
+    f=[]
+    for i in range(97,123):
+        v=(chr(i))
+        for char in text:
+            if char in v:
+                f.append(i)
+    str1 = " ".join(str(m) for m in f)
+
+    return str1
+
+
+print(alphabet_position("The narwhal bacons at midnight"))
+
+
+def alphabet_position(text):
+    f = []
+    for i in range(97, 123):
+        v = (chr(i))
+        f.append(v)
+    for c in enumerate(f):
+        print(c)
+    for char in text:
+        if char in c:
+            return c
+
+
+print(alphabet_position("a"))
+"""""""""
