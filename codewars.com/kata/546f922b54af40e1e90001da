@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/546f922b54af40e1e90001da/train/python
+
+
+def alphabet_position(text):
+    s="abcdefghijklmnopqrstuvwxyz"
+    pos={}
+    for i,k in enumerate(s,1):
+        pos[k]=i
+    s1=""
+    for char in text.lower():
+        if char in s:
+            s1+=str(pos[char])+" "
+    return s1.strip()
